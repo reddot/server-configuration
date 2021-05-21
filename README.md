@@ -36,8 +36,9 @@ MYSQL User/DB:
 sudo mysql
 ```
 ```mysql
-CREATE DATABASE project_db;
-GRANT ALL ON project_db.* TO 'project_user'@'%';
+CREATE DATABASE project_db; # Create Database
+CREATE USER 'project_user'@'%' IDENTIFIED WITH mysql_native_password BY '*********'; # Create User + Password
+GRANT ALL ON project_db.* TO 'project_user'@'%'; # Grant permisions
 ```
 PHP
 ```
