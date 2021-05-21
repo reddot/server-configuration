@@ -57,5 +57,29 @@ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 php -r "unlink('composer-setup.php');"
 ```
 
+# 3. Redis
+Install
+```
+sudo apt install redis-server
+```
+Set Password
+```
+sudo vim /etc/redis/redis.conf
+```
+```
+# requirepass foobared <-- Uncomment and change foobared to your new password
+```
+Restart
+```
+sudo systemctl restart redis
+```
+Test
+```
+$ redis-cli
+127.0.0.1:6379> ping
+(error) NOAUTH Authentication required. # Should throw error
+127.0.0.1:6379> auth *YOUR_NEW_PASSWORD*
+OK
+```
 1. [LEMP stack - Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-ubuntu-20-04)
 2. [PHP 8](https://linuxize.com/post/how-to-install-php-8-on-ubuntu-20-04)
