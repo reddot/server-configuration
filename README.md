@@ -31,6 +31,14 @@ sudo apt install mysql-server
 ```
 sudo mysql_secure_installation
 ```
+MYSQL User/DB:
+```
+sudo mysql
+```
+```mysql
+CREATE DATABASE project_db;
+GRANT ALL ON project_db.* TO 'project_user'@'%';
+```
 PHP
 ```
 sudo apt install software-properties-common
