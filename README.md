@@ -22,6 +22,7 @@ chsh -s /bin/bash
 NGINX
 ```
 sudo apt update
+sudo apt install zip unzip 
 sudo apt install nginx
 ```
 MYSQL
@@ -47,7 +48,7 @@ sudo add-apt-repository ppa:ondrej/php
 
 sudo apt update
 sudo apt install php8.0-fpm
-sudo apt install php8.0-mysql php8.0-gd
+sudo apt install php8.0-mysql php8.0-gd php8.0-mbstring php8.0-xml php8.0-zip
 ```
 PHP Composer:
 ```
