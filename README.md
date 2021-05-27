@@ -58,6 +58,45 @@ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 php -r "unlink('composer-setup.php');"
 ```
 
+# Run PHP/NGINX as other user
+## Nginx
+```
+cd /etc/nginx
+sudo vim nginx.conf
+```
+old:
+```
+user www-data;
+```
+new:
+```
+user reddot;
+```
+## Php-fpm
+```
+cd /etc/php/8.0/fpm/pool.d
+sudo vim www.conf
+```
+old:
+```
+...
+user = www-data
+group = www-data
+...
+listen.owner = www-data
+listen.group = www-data
+...
+```
+new:
+```
+...
+user = reddot
+group = reddot
+...
+listen.owner = reddot
+listen.group = reddot
+...
+```
 # 3. Redis
 Install
 ```
