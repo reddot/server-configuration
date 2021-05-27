@@ -97,6 +97,12 @@ listen.owner = reddot
 listen.group = reddot
 ...
 ```
+# Generate SSH Key (for git)
+```
+ssh-keygen -t ed25519 -C "info@reddot.ge"
+cat ~/.ssh/id_ed25519.pub # copy this and paste in github
+```
+
 # 3. Redis
 Install
 ```
