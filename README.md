@@ -22,8 +22,7 @@ chsh -s /bin/bash
 NGINX
 ```
 sudo apt update
-sudo apt install zip unzip 
-sudo apt install nginx
+sudo apt install zip unzip nginx
 ```
 MYSQL
 ```
