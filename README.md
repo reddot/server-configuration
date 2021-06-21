@@ -18,16 +18,25 @@ usermod -aG sudo reddot
 chsh -s /bin/bash
 ```
 
+Install All
+```
+sudo add-apt-repository ppa:ondrej/php
+
+sudo apt update
+
+sudo apt install -y \
+    zip unzip nginx \
+    mysql-server redis-server \
+    software-properties-common \
+    php8.0-fpm php8.0-mysql php8.0-gd php8.0-mbstring php8.0-xml php8.0-zip \
+    supervisor    
+```
 # 2. LEMP 
 NGINX
 ```
-sudo apt update
-sudo apt install zip unzip nginx
+ALREADY INSTALLED
 ```
 MYSQL
-```
-sudo apt install mysql-server
-```
 ```
 sudo mysql_secure_installation
 ```
@@ -42,11 +51,7 @@ GRANT ALL ON project_db.* TO 'project_user'@'%'; # Grant permisions
 ```
 PHP
 ```
-sudo apt install software-properties-common
-sudo add-apt-repository ppa:ondrej/php
-
-sudo apt update
-sudo apt install php8.0-fpm php8.0-mysql php8.0-gd php8.0-mbstring php8.0-xml php8.0-zip
+ALREADY INSTALLED
 ```
 PHP Composer:
 ```
@@ -104,7 +109,7 @@ cat ~/.ssh/id_ed25519.pub # copy this and paste in github
 # 3. Redis
 Install
 ```
-sudo apt install redis-server
+ALREADY INSTALLED
 ```
 Set Password
 ```
