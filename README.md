@@ -64,8 +64,7 @@ php -r "unlink('composer-setup.php');"
 # Run PHP/NGINX as other user
 ## Nginx
 ```
-cd /etc/nginx
-sudo vim nginx.conf
+sudo vim /etc/nginx/nginx.conf
 ```
 old:
 ```
@@ -77,8 +76,7 @@ user reddot;
 ```
 ## Php-fpm
 ```
-cd /etc/php/8.0/fpm/pool.d
-sudo vim www.conf
+sudo vim /etc/php/8.0/fpm/pool.d/www.conf
 ```
 old:
 ```
