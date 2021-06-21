@@ -46,8 +46,7 @@ sudo apt install software-properties-common
 sudo add-apt-repository ppa:ondrej/php
 
 sudo apt update
-sudo apt install php8.0-fpm
-sudo apt install php8.0-mysql php8.0-gd php8.0-mbstring php8.0-xml php8.0-zip
+sudo apt install php8.0-fpm php8.0-mysql php8.0-gd php8.0-mbstring php8.0-xml php8.0-zip
 ```
 PHP Composer:
 ```
