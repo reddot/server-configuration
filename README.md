@@ -105,6 +105,11 @@ listen.group = reddot
 sudo chown -R reddot:reddot /var/log/nginx/
 ```
 
+Restart php-fpm/nginx
+```
+sudo systemctl restart php8.0-fpm.service nginx.service
+```
+
 # Generate SSH Key (for git)
 ```
 ssh-keygen -t ed25519 -C "info@reddot.ge"
