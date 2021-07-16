@@ -97,7 +97,14 @@ group = reddot
 listen.owner = reddot
 listen.group = reddot
 ...
+
 ```
+
+## Change log file permission
+```
+sudo chown -R reddot:reddot /var/log/nginx/
+```
+
 # Generate SSH Key (for git)
 ```
 ssh-keygen -t ed25519 -C "info@reddot.ge"
