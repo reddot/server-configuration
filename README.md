@@ -35,7 +35,7 @@ sudo apt install -y \
 
 1.5 (optional) add your device to ssh, to login without password [do it from your local device]
 ```
-ssh-copy-id -i ~/.ssh/id_rsa.pub reddot@$SERVER_IP
+ssh-copy-id -i ~/.ssh/id_ed25519.pub reddot@$SERVER_IP
 ```
 # 2. LEMP 
 NGINX
