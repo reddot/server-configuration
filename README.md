@@ -29,6 +29,7 @@ sudo apt install -y \
     mysql-server redis-server \
     software-properties-common \
     php8.0-fpm php8.0-mysql php8.0-gd php8.0-mbstring php8.0-xml php8.0-zip \
+    neovim \
     supervisor    
 ```
 # 2. LEMP 
