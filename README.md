@@ -30,6 +30,7 @@ sudo apt install -y \
     software-properties-common \
     php8.0-fpm php8.0-mysql php8.0-gd php8.0-mbstring php8.0-xml php8.0-zip \
     neovim \
+    certbot python3-certbot-nginx \
     supervisor    
 ```
 
@@ -145,6 +146,23 @@ $ redis-cli
 (error) NOAUTH Authentication required. # Should throw error
 127.0.0.1:6379> auth *YOUR_NEW_PASSWORD*
 OK
+```
+
+# 4. Instal SSL
+Install
+```
+ALREADY INSTALLED
+```
+Change Server Name (`/etc/nginx/sites-available...`)
+```
+    server_name _;
+```
+```
+    server_name [...].ge www.[...].ge;
+```
+Run Certbot
+```
+sudo certbot --nginx -d example.com
 ```
 1. [LEMP stack - Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-ubuntu-20-04)
 2. [PHP 8](https://linuxize.com/post/how-to-install-php-8-on-ubuntu-20-04)
