@@ -148,7 +148,7 @@ $ redis-cli
 OK
 ```
 
-# 4. Instal SSL
+# 4. Install SSL
 Install
 ```
 ALREADY INSTALLED
