@@ -13,6 +13,8 @@ sudo passwd reddot
 ```
 usermod -aG sudo reddot
 ```
+Log out from current ssh session
+
 1.4 (optional) change shell
 ```
 chsh -s /bin/bash
