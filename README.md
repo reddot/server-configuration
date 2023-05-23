@@ -30,7 +30,7 @@ sudo apt install -y \
     zip unzip nginx \
     mysql-server redis-server \
     software-properties-common \
-    php8.0-fpm php8.0-mysql php8.0-gd php8.0-mbstring php8.0-xml php8.0-zip \
+    php8.2-fpm php8.2-mysql php8.2-gd php8.2-mbstring php8.2-xml php8.2-zip \
     neovim \
     certbot python3-certbot-nginx \
     supervisor    
@@ -85,7 +85,7 @@ user reddot;
 ```
 ## Php-fpm
 ```
-sudo vim /etc/php/8.0/fpm/pool.d/www.conf
+sudo vim /etc/php/8.2/fpm/pool.d/www.conf
 ```
 old:
 ```
@@ -116,7 +116,7 @@ sudo chown -R reddot:reddot /var/log/nginx/
 
 Restart php-fpm/nginx
 ```
-sudo systemctl restart php8.0-fpm.service nginx.service
+sudo systemctl restart php8.2-fpm.service nginx.service
 ```
 
 # Generate SSH Key (for git)
